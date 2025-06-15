@@ -17,6 +17,8 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
+                    <key>NSLocationWhenInUseUsageDescription</key>
+                    <string>위치 검색을 위해 사용합니다</string>
 				</dict>
 			</array>
 		</dict>
