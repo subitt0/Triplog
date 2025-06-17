@@ -1,12 +1,12 @@
 # Triplog
 
-여행의 감정과 추억을 한눈에, 카드처럼 정리하는 어플리케이션
-2171409 배수빈
+ 2171409 배수빈  
+ 
+### 여행 일기를 작성하고 지도에서 한 눈에 확인할 수 있는 어플리케이션
+### 유튜브 링크: https://youtu.be/bI_DHMAILsQ
 
-
-
+      
 ### 1. 프로젝트 수행 목적
-
 
 #### 1.1 프로젝트 정의
 
@@ -47,12 +47,13 @@
 
 •	메인 화면
 
+<img src="https://github.com/user-attachments/assets/ac0b1254-db3e-42a6-b274-c7f61f47aa85" width="300" />
 <img src="https://github.com/user-attachments/assets/3b61193d-6b63-4a50-881d-9ee287106356" width="300" />
 
 •	여행 추가 화면 / 여행 기록 카드
 
 <img src="https://github.com/user-attachments/assets/8b5c6031-eeb7-42dc-9e0d-663ff8cd9cf9" width="300" />
-<img src="https://github.com/user-attachments/assets/f53c1457-85b2-4458-a256-d4c49e48f015" width="300" />
+<img src="https://github.com/user-attachments/assets/61898f06-0308-49e3-8e8b-ab67e7f60ee6" width="300" />
 
 •	지도
 
@@ -66,3 +67,4 @@
 •	텍스트 + 감정 이모지 + 사진으로 여행 당시의 분위기와 감정을 한눈에 정리 가능
 
 •	장소 중심의 여행 기록으로 공간 기억 강화
+
