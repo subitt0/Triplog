@@ -7,12 +7,6 @@
 
 import UIKit
 
-//
-//  ChecklistViewController.swift
-//  Triplog
-
-import UIKit
-
 class ChecklistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
@@ -39,7 +33,7 @@ class ChecklistViewController: UIViewController, UITableViewDataSource, UITableV
         let item = checklistItems[indexPath.row]
         cell.checkButton.setImage(UIImage(systemName: item.isChecked ? "checkmark.square" : "square"), for: .normal)
         cell.checkButton.tintColor = .black
-        cell.checkButton.configuration = nil // ✅ 배경 제거 (필요 시)
+        cell.checkButton.configuration = nil
         updateStrikeThrough(for: cell.titleLabel, text: item.title, isChecked: item.isChecked)
         // 선택된 셀은 회색 배경, 아니면 흰색
         cell.backgroundColor = (indexPath == selectedIndexPath) ? UIColor.systemGray5 : UIColor.white
@@ -58,7 +52,7 @@ class ChecklistViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedIndexPath = indexPath  // 선택된 항목 추적
+        selectedIndexPath = indexPath //선택된 항목 추적
         tableView.reloadData()
     }
     

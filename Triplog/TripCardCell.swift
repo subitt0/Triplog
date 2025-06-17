@@ -16,8 +16,6 @@ class TripCardCell: UICollectionViewCell {
     @IBOutlet weak var emojiImageView: UIImageView!
     
     func configure(with trip: Trip) {
-        print("🧩 configure() 호출됨 - title: \(trip.title)")
-        
         if let data = trip.imageData {
             imageView.image = UIImage(data: data)
         }

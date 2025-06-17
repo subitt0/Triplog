@@ -19,8 +19,6 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         //super.viewDidLoad()
         TripManager.shared.loadTrips()
         
-        print("✅ MainPageViewController loaded")
-        
         addButton.setTitleColor(.systemGray2, for: .normal)
         
         collectionView.delegate = self
@@ -32,9 +30,6 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
             name: .didAddTrip,
             object: nil
         )
-        print("collectionView: \(collectionView != nil ? "연결됨 ✅" : "nil ❌")")
-        print("delegate: \(collectionView.delegate != nil ? "✅" : "❌")")
-        print("dataSource: \(collectionView.dataSource != nil ? "✅" : "❌")")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -45,16 +40,6 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let trip = trips[indexPath.item]
-        
-        // 🔍 콘솔에 Trip 정보 출력
-        print("🧾 Trip \(indexPath.item):")
-        print("- 제목: \(trip.title)")
-        print("- 날짜: \(trip.dateRange)")
-        print("- 동행인: \(trip.companion)")
-        print("- 태그: \(trip.tags)")
-        print("- 이모지: \(trip.emoji)")
-        print("- 이미지 있음? \(trip.imageData != nil ? "✅" : "❌")")
-        print("- 일기: \(trip.diary)")
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TripCardCell", for: indexPath) as! TripCardCell
         cell.configure(with: trip)
@@ -74,7 +59,6 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let addVC = storyboard.instantiateViewController(withIdentifier: "AddTravelVC") as! AddTravelViewController
         navigationController?.pushViewController(addVC, animated: true)
-        print("버튼 눌림 ✅")
     }
     
     @objc func handleTripAdded(_ notification: Notification) {
@@ -91,7 +75,6 @@ class MainPageViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("📢 화면 보임, trips: \(trips.count)")
         collectionView.reloadData()
     }
     

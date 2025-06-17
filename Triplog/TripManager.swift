@@ -33,7 +33,7 @@ class TripManager {
     }
     
     func addTrip(_ trip: Trip) {
-        trips.append(trip)
+        trips.insert(trip, at: 0)
         saveTrips()
     }
     

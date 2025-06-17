@@ -38,8 +38,10 @@ class AddTravelViewController: UIViewController {
     //사진 추가
     @IBOutlet weak var addPhotoButton: UIButton!
     
+    //일기
     @IBOutlet weak var diaryTextView: UITextView!
     
+    //위치
     @IBOutlet weak var locationTextField: UITextField!
     
     
@@ -53,12 +55,12 @@ class AddTravelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 👉 모든 버튼 목록
+        //모든 이모지 버튼 목록
         let emojiButtons = [emoji_love, emoji_happy, emoji_neutral, emoji_sad, emoji_angry]
         
         for button in emojiButtons {
-            button?.backgroundColor = .white // 원하는 기본 배경색
-            button?.tintColor = .clear // 시스템 블루 눌림 효과 제거
+            button?.backgroundColor = .white
+            button?.tintColor = .clear
         }
         
         let tagTextFields = [tagTextField1, tagTextField2, tagTextField3]
@@ -66,8 +68,8 @@ class AddTravelViewController: UIViewController {
         for tagTextField in tagTextFields {
             tagTextField?.layer.borderWidth = 1
             tagTextField?.layer.borderColor = UIColor.lightGray.cgColor
-            tagTextField?.layer.cornerRadius = 6 // 선택사항
-            tagTextField?.clipsToBounds = true  // cornerRadius가 적용되도록
+            tagTextField?.layer.cornerRadius = 6
+            tagTextField?.clipsToBounds = true
         }
         
         let companionButtons = [familyButton, aloneButton, friendButton, otherButton]
@@ -75,8 +77,8 @@ class AddTravelViewController: UIViewController {
         for button in companionButtons {
             button?.layer.borderWidth = 1
             button?.layer.borderColor = UIColor.lightGray.cgColor
-            button?.layer.cornerRadius = 6 // 선택사항
-            button?.clipsToBounds = true  // cornerRadius가 적용되도록
+            button?.layer.cornerRadius = 6
+            button?.clipsToBounds = true
         }
         
         saveButton.backgroundColor = UIColor(red: 210/255, green: 195/255, blue: 171/255, alpha: 1.0)
@@ -85,8 +87,8 @@ class AddTravelViewController: UIViewController {
         
         diaryTextView.layer.borderWidth = 1
         diaryTextView.layer.borderColor = UIColor.lightGray.cgColor
-        diaryTextView.layer.cornerRadius = 6 // 선택사항
-        diaryTextView.clipsToBounds = true  // cornerRadius가 적용되도록
+        diaryTextView.layer.cornerRadius = 6
+        diaryTextView.clipsToBounds = true
     }
     
     @IBAction func companionButtonTapped(_ sender: UIButton) {
@@ -141,7 +143,7 @@ class AddTravelViewController: UIViewController {
     
     
     @IBAction func saveButtonTapped(_ sender: UIButton) {
-        // ✅ 1. 필수 항목 검사
+        //필수 항목 검사
         guard let title = titleTextField.text, !title.isEmpty,
               let location = locationTextField.text, !location.isEmpty,
               !selectedCompanion.isEmpty,
@@ -150,7 +152,7 @@ class AddTravelViewController: UIViewController {
             return
         }
         
-        // ✅ 2. 위치 형식 안내 메시지
+        //위치 형식 안내 메시지
         if location.count < 3 {
             showAlert(title: "위치 입력 오류", message: "위치는 3글자 이상 입력해주세요.")
             return

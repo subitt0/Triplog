@@ -25,8 +25,8 @@ class TravelDetailViewController: UIViewController {
         
         diaryTextView.layer.borderWidth = 1
         diaryTextView.layer.borderColor = UIColor.lightGray.cgColor
-        diaryTextView.layer.cornerRadius = 6 // 선택사항
-        diaryTextView.clipsToBounds = true  // cornerRadius가 적용되도록
+        diaryTextView.layer.cornerRadius = 6
+        diaryTextView.clipsToBounds = true
         
     }
     
@@ -59,7 +59,7 @@ class TravelDetailViewController: UIViewController {
             TripManager.shared.deleteTrip(trip)
             NotificationCenter.default.post(name: .didUpdateTrips, object: nil)
             
-            // 홈 화면(MainPage)으로 이동
+            // 홈 화면으로 이동
             self.navigationController?.popViewController(animated: true)
         }))
         

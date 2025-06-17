@@ -77,7 +77,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="646"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzr-xL-ZuO">
-                                        <rect key="frame" x="141.66666666666666" y="0.0" width="109.66666666666666" height="25"/>
+                                        <rect key="frame" x="16" y="0.0" width="361" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="9lT-QR-HO1"/>
                                         </constraints>
@@ -87,12 +87,14 @@
                                                     <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="20" name="AppleSDGothicNeo-SemiBold"/>
                                                     <font key="NSOriginalFont" size="20" name="SFPro-Semibold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content=" ">
                                                 <attributes>
                                                     <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="20" name="SFPro-Semibold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                             <fragment content="여행기록">
@@ -100,6 +102,7 @@
                                                     <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="20" name="AppleSDGothicNeo-SemiBold"/>
                                                     <font key="NSOriginalFont" size="20" name="SFPro-Semibold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -219,14 +222,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="hmn-WZ-G7k" firstAttribute="leading" secondItem="Zqc-19-hDl" secondAttribute="leading" constant="166.66999999999999" id="6MX-bT-HqD"/>
-                                    <constraint firstItem="nzr-xL-ZuO" firstAttribute="leading" secondItem="Zqc-19-hDl" secondAttribute="leading" constant="141.66999999999999" id="728-rn-lpg"/>
                                     <constraint firstItem="hmn-WZ-G7k" firstAttribute="top" secondItem="b0X-W2-ksR" secondAttribute="bottom" constant="15" id="CbI-bJ-cCl"/>
                                     <constraint firstAttribute="trailing" secondItem="hmn-WZ-G7k" secondAttribute="trailing" constant="166.33000000000001" id="CzA-Es-gZd"/>
                                     <constraint firstItem="b0X-W2-ksR" firstAttribute="leading" secondItem="Zqc-19-hDl" secondAttribute="leading" id="DyW-5A-d6D"/>
-                                    <constraint firstAttribute="trailing" secondItem="nzr-xL-ZuO" secondAttribute="trailing" constant="141.66999999999999" id="LAF-je-apP"/>
                                     <constraint firstAttribute="trailing" secondItem="b0X-W2-ksR" secondAttribute="trailing" id="LGP-Wo-LfX"/>
                                     <constraint firstAttribute="bottom" secondItem="hmn-WZ-G7k" secondAttribute="bottom" id="Rld-Kd-78i"/>
+                                    <constraint firstItem="nzr-xL-ZuO" firstAttribute="leading" secondItem="Zqc-19-hDl" secondAttribute="leading" constant="16" id="gh2-hx-JJM"/>
                                     <constraint firstItem="nzr-xL-ZuO" firstAttribute="top" secondItem="Zqc-19-hDl" secondAttribute="top" id="oL4-G1-xuv"/>
+                                    <constraint firstAttribute="trailing" secondItem="nzr-xL-ZuO" secondAttribute="trailing" constant="16" id="onb-L5-hSu"/>
                                     <constraint firstItem="b0X-W2-ksR" firstAttribute="top" secondItem="nzr-xL-ZuO" secondAttribute="bottom" constant="15" id="tHN-0n-vzf"/>
                                 </constraints>
                             </stackView>
@@ -905,7 +908,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rar-0E-SGn">
                                 <rect key="frame" x="152" y="733" width="88" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="여행 삭제"/>
                                 <connections>
@@ -1016,9 +1018,6 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
