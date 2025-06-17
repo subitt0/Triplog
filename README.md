@@ -1,50 +1,68 @@
 # Triplog
 
 여행의 감정과 추억을 한눈에, 카드처럼 정리하는 어플리케이션
+2171409 배수빈
 
-1. 프로젝트 수행 목적
 
-1.1 프로젝트 정의
+
+### 1. 프로젝트 수행 목적
+
+
+#### 1.1 프로젝트 정의
 
 •	사용자가 여행 일기를 작성하면, 이를 카드 형태로 정리하여 메인 페이지에 보여주며, 지도에 여행 핀이 찍히는 여행 기록 어플리케이션
 
-1.2 프로젝트 배경
+
+#### 1.2 프로젝트 배경
 •	여행의 감정과 기억을 간단히 기록하고 다시 꺼내보는 것은 소중한 경험이다. 그러나 기존의 메모 앱이나 사진첩은 감정이나 동행인, 여행 위치 등 다양한 요소를 통합해 보여주기 어렵다. 특히 지도로 여행을 시각화하거나 감정을 기록하는 기능은 부족하다.
+
 •	이를 해결하고자, 감정 중심의 여행 기록과 함께 여행지를 지도에 핀으로 표시할 수 있는 iOS 기반 여행 기록 앱을 개발하게 되었다.
 
-1.3 프로젝트 목표
+
+#### 1.3 프로젝트 목표
 •	여행 일기와 감정, 동행인, 해시태그, 이모지 등을 기록할 수 있도록 구성
+
 •	여행지를 지도에 핀으로 표시하여, 사용자가 다녀온 여행지를 시각적으로 한눈에 확인할 수 있도록 함
+
 •	여행 전 필요한 준비물 추가 및 삭제 가능, 체크박스를 통해 준비 여부를 관리할 수 있도록 함
 
-2. 프로젝트 개요
 
-2.1 프로젝트 설명
+
+### 2. 프로젝트 개요
+
+
+#### 2.1 프로젝트 설명
 •	메인 화면에서 + 버튼을 누르면 여행 정보를 입력하고 일기를 쓸 수 있다.
+
 •	작성한 후 '저장하기'를 누르면 메인 화면에 저장되고, 지도를 눌러 지금까지 내가 다녀왔던 여행지들을 한 눈에 확인할 수 있다.
+
 •	체크리스트 버튼을 눌러 필요한 여행 준비물을 추가하고, 준비 여부를 관리할 수 있다.
 
-2.2 프로젝트 구조
+
+#### 2.2 프로젝트 구조
 ![image](https://github.com/user-attachments/assets/9f16978e-28f3-4261-bd2c-5c766529d43b)
 
-2.3 결과물
+
+#### 2.3 결과물
 
 •	메인 화면
 
-![image](https://github.com/user-attachments/assets/3b61193d-6b63-4a50-881d-9ee287106356)
+<img src="https://github.com/user-attachments/assets/3b61193d-6b63-4a50-881d-9ee287106356" width="300" />
 
-•	여행 추가 화면
-![image](https://github.com/user-attachments/assets/8b5c6031-eeb7-42dc-9e0d-663ff8cd9cf9)
+•	여행 추가 화면 / 여행 기록 카드
 
-•	여행 기록 카드
-![image](https://github.com/user-attachments/assets/f53c1457-85b2-4458-a256-d4c49e48f015)
+<img src="https://github.com/user-attachments/assets/8b5c6031-eeb7-42dc-9e0d-663ff8cd9cf9" width="300" />
+<img src="https://github.com/user-attachments/assets/f53c1457-85b2-4458-a256-d4c49e48f015" width="300" />
 
 •	지도
-![image](https://github.com/user-attachments/assets/f71616bd-cd32-4000-bdee-2150c111b73b)
+
+<img src="https://github.com/user-attachments/assets/f71616bd-cd32-4000-bdee-2150c111b73b" width="300" />
 
 •	체크리스트
-![image](https://github.com/user-attachments/assets/2d75839e-4390-4191-96a7-e880541cee08)
 
-2.4 기대효과
+<img src="https://github.com/user-attachments/assets/2d75839e-4390-4191-96a7-e880541cee08" width="300" />
+
+#### 2.4 기대효과
 •	텍스트 + 감정 이모지 + 사진으로 여행 당시의 분위기와 감정을 한눈에 정리 가능
+
 •	장소 중심의 여행 기록으로 공간 기억 강화
